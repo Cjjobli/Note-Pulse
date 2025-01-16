@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="notes.js"></script>
+    <title> Note Pulse </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="audio" src="correct.mp3"></audio>
+    <audio id="errorSound" src="error.mp3"></audio>
+
+    <header>
+        <h1 id="pulsing-text"> Note Pulse</h1>
+    </header>
+    
+    <main>
+        <h2 id="levelIndicator"> A MUSICAL NOTE MEMORIZATION TOOL </h2>
+
+        <p id="p1">Practice music sight-reading in treble and bass clefs.
+            <br> 
+            <br>
+            There are four levels, each covering different notes, level 4 covers all of them. Master each level before moving on to the next.
+            <br>
+            <br>
+            Ready to practice? Press start!
+        </p>
+        
+        <button type="start" id="start"> START </button>
+
+        <div id="notes">
+            <!-- Level 1 -->
+            <button id="C4" value="0" class="flex-notes"> C </button>
+            <button id="D4" value="1" class="flex-notes"> D </button>
+            <button id="E4" value="2" class="flex-notes"> E </button>
+            <button id="F4" value="3" class="flex-notes"> F </button>
+            <br>
+            <!-- Level 2 -->
+            <div id = "lvl2-notes">
+            <button id="G4" value="0" class="flex-notes"> G </button>
+            <button id="A4" value="1" class="flex-notes"> A </button>
+            <button id="B4" value="2" class="flex-notes"> B </button>
+            <button id="C5" value="3" class="flex-notes"> C </button>
+            </div>
+            <br>
+            <!-- Level 3 -->
+            <button id="D5" value="0" class="flex-notes"> D </button>
+            <button id="E5" value="1" class="flex-notes"> E </button>
+            <button id="F5" value="2" class="flex-notes"> F </button>
+            <button id="G5" value="3" class="flex-notes"> G </button>
+            <button id="A5" value="4" class="flex-notes"> A </button>
+            <br>
+            <!-- Level 4 -->
+            <button id="C6" value="0" class="flex-notes"> C </button>
+            <button id="D6" value="1" class="flex-notes"> D </button>
+            <button id="E6" value="2" class="flex-notes"> E </button>
+            <button id="F6" value="3" class="flex-notes"> F </button>
+            <button id="G6" value="4" class="flex-notes"> G </button>
+            <button id="A6" value="5" class="flex-notes"> A </button>
+            <button id="B6" value="6" class="flex-notes"> B </button>
+
+            <button id="C7" value="7" class="flex-notes"> C </button>
+            <button id="D7" value="8" class="flex-notes"> D </button>
+            <button id="E7" value="9" class="flex-notes"> E </button>
+            <button id="F7" value="10" class="flex-notes"> F </button>
+            <button id="G7" value="11" class="flex-notes"> G </button>
+            <button id="A7" value="12" class="flex-notes"> A </button>
+        </div>
+
+
+        <button id="treble" class="purpleButtons"> Treble </button>
+        <button id="bass" class="purpleButtons"> Bass </button>
+
+        <div id="levelsTreble">
+        <button id="lvl1" value="treble"> Level 1 </button>
+        <button id="lvl2" value="treble"> Level 2 </button>
+        <button id="lvl3" value="treble"> Level 3 </button>
+        <button id="lvl4" value="treble"> Level 4 </button>
+        </div>
+
+        <div id="levelsBass">
+            <button id="bass1" value="bass"> Level 1 </button>
+            <button id="bass2" value="bass"> Level 2 </button>
+            <button id="bass3" value="bass"> Level 3 </button>
+            <button id="bass4" value="bass"> Level 4 </button>
+        </div>
+
+        <button id="back"> Back </button>
+        <button id="begin"> Begin</button>
+
+        <div id="scoringID" class="scoring">
+            <p id="time"> Time: </p>
+            <p id="timer"> 30 </p>
+            <p id="score"> Score:</p>
+            <p id="actualScore"> 0 </p>
+        </div>
+        <p id="yourScore"> Your score: <span id="displayScore">0</span></p>
+        <p id="mistakes" class="mistakes">Mistakes: <span id="mistakesScore">0</span></p>
+
+        <div id="notesBass">
+        <!-- Level 1 -->
+        <button id="E1" value="0"> E </button>
+        <button id="F1" value="1"> F </button>
+        <button id="G1" value="2"> G </button>
+        <button id="A1" value="3"> A </button>
+        <br>
+        <!-- Level 2 -->
+        <button id="B1" value="0"> B </button>
+        <button id="C2" value="1"> C </button>
+        <button id="D2" value="2"> D </button>
+        <button id="E2" value="3"> E </button>
+        <br>
+        <!-- Level 3 -->
+        <button id="F2" value="0"> F </button>
+        <button id="G2" value="1"> G </button>
+        <button id="A2" value="2"> A </button>
+        <button id="B2" value="3"> B </button>
+        <button id="C3" value="4"> C </button>
+        <br>
+        <!-- Level 4 -->
+        <button id="E3E3" value="0"> E </button>
+        <button id="F3F3" value="1"> F </button>
+        <button id="G3G3" value="2"> G </button>
+        <button id="A3A3" value="3"> A </button>
+        <button id="B3B3" value="4"> B </button>
+        <button id="C4C4" value="5"> C </button>
+        <button id="D4D4" value="6"> D </button>
+        <button id="E4E4" value="7"> E </button>
+        <button id="F4F4" value="8"> F </button>
+        <button id="G4G4" value="9"> G </button>
+        <button id="A4A4" value="10"> A </button>
+        <button id="B4B4" value="11"> B </button>
+        <button id="C5C5" value="12"> C </button>
+        </div>
+
+        <div id="trebleGuide">
+            <p> Level 1 covers the notes middle C, D, E, F</p>
+            <p> Level 2 covers the notes G, A, B, C </p>
+            <p> Level 3 covers the notes D, E, F, G, A </p>
+            <p> Level 4 covers all the notes </p>
+            <img src="images/allTreble.jpg">
+            <p> Middle C is called middle C because it is in the middle of the grand staff.</p>
+            <p>The concept of Middle C has been used as a reference point in teaching and music theory because it sits in the middle of the practical vocal range of many singers and the range of many instruments. It helps in visualizing and understanding the structure of the musical scale and intervals.</p>
+            <img src="images/pianoNotes.png">
+        </div>
+
+        <div id="bassGuide">
+            <p> Level 1 covers the notes middle E, F, G, A</p>
+            <p> Level 2 covers the notes B, C, D, E </p>
+            <p> Level 3 covers the notes F, G, A, B, C</p>
+            <p> Level 4 covers all the notes </p>
+            <img src="images/allBase.jpg">
+            <br>
+            <img src="images/pianoNotes.png">
+        </div>
+
+    </main>
+
+</body>
+</html>

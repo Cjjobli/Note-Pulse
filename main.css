@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1b1a1b;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+main{
+    margin: 0 auto;
+    width: 1500px;
+    
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+
+	background: linear-gradient(-45deg, #c5822b, #4933ad, #a84c4c, #060d4e);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+h1{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0 0 20px #9a48d0;
+}
+
+h2{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 35px;
+
+    background: -webkit-linear-gradient(to right, #1613bd 0%, #d915b5 50%,#ea7ea2 100%);
+    background: -moz-linear-gradient(to right, #1613bd 0%, #d915b5 50%,#ea7ea2 100%);
+    background: linear-gradient(to right, #a113bd 0%, #7edf72 50%,#ea7ea2 100%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #E4B7E5;
+
+    font-size: 20px;
+}
+
+#start{
+    display: block;
+    margin: 0 auto;
+
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    width: 300px;
+    background-color: #63458A;
+    box-shadow: 0px 5px 10px hsl(234, 62%, 68%);
+    border-radius: 20px;
+    border-style: none;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #a8f2fc;
+    color: #ffffff;
+
+	background: linear-gradient(45deg, #a352ee, #4933ad, #461380, #250330);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+#start:hover{
+    transform: translate(0px, 10%);
+    transition-duration: 0.2s;
+    background-color: hsl(253, 39%, 57%);
+    color: #E4B7E5;
+
+
+}
+
+.purpleButtons{
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    width: 20%;
+    color: #ffffff;
+    background-color: #7639a8;
+    box-shadow: 0px 5px 5px hsl(234, 62%, 68%);
+    border-radius: 20px;
+    border-style: none;
+}
+
+#treble, #bass{
+    display: block;
+    margin: 0 auto;
+
+    margin-top: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #a8f2fc;
+}
+
+#treble:hover, #bass:hover{
+    transform: translate(0px, 10%);
+    transition-duration: 0.2s;
+    background-color: hsl(253, 39%, 57%);
+
+}
+ 
+#levelsTreble, #levelsBass{
+
+    margin-top: 30px;
+    margin-left: 200px;
+    
+} 
+
+#lvl1, #lvl2, #lvl3, #lvl4, #bass1, #bass2, #bass3, #bass4{
+    display: inline;
+    margin: 0 auto;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    width: 20%;
+    color: #ffffff;
+    background-color: #7639a8;
+    box-shadow: 0px 5px 5px hsl(234, 62%, 68%);
+    border-style: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#lvl1:hover, #lvl2:hover, #lvl3:hover, #lvl4:hover, #bass1:hover, #bass2:hover, #bass3:hover, #bass4:hover{
+    transform: translate(0px, 10%);
+    transition-duration: 0.2s;
+    background-color: hsl(253, 39%, 57%);
+
+}
+
+#back, #begin{
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    width: 15%;
+    color: #c0c0c0;
+    background-color: #66457c;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 10px 10px 5px hsl(0, 0%, 0%);
+
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+#begin{
+    background: linear-gradient(-45deg, #9586b4, #504779, #685a77, #834597);
+    color: rgb(177, 245, 177);
+}
+
+.scoring{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+#score{
+    margin-left: 50px;
+}
+
+.scoring p{
+    font-size: 30px;
+}
+
+#back:hover, #begin:hover{
+    transform: translate(0px, 10%);
+    transition-duration: 0.2s;
+    background: hsl(253, 17%, 62%);
+}
+
+#begin:hover{
+    background: linear-gradient(-45deg, #5c29c2, #408cca, #557da3, #834597);
+
+}
+
+.flex-notes{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    
+    color: #ffffff;
+    background-color: rgb(125, 64, 204);
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 0px 5px 5px hsl(234, 62%, 68%);
+
+    margin-left: 130px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #a8f2fc;
+
+}
+
+.flex-notes:hover{
+    transform: scale(1.2);
+    transition-duration: 0.1s;
+    background-color: hsl(253, 33%, 59%);
+}
+
+#C4, #G4, #E1, #B1{
+    margin-left: 400px;
+}
+
+#D5, #F2{
+    margin-left: 300px;
+}
+
+.note-image{
+    display: block;
+    margin: 0 auto;
+
+    border-style: solid;
+    border-width: 10px;
+    color: #b184eb;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px #a25bb1;
+    margin-bottom: 50px;
+
+}
+
+#yourScore, #mistakes{
+    width: 300px;
+    padding: 20px;
+    display: none;
+    margin-top: 60px;
+    font-size: 30px;
+    color: #efbcff;
+    border: 1px solid;
+}
+
+#trebleGuide, #bassGuide{
+    display: none;
+}
+
+#trebleGuide img, #bassGuide img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    border-style: solid;
+    border-width: 7px;
+    color: #b184eb;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px #a25bb1;
+    margin-bottom: 50px;
+}
+
+#trebleGuide p:nth-child(-n+4), #bassGuide p:nth-child( -n+4){
+    font-size: 25px;
+    margin: 30px 0px;
+    
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#pulsing-text {
+    color: #ff8147;
+    animation: pulse 1.5s infinite;
+    
+}
+
+button {
+    cursor: pointer;
+}
